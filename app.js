@@ -2,8 +2,8 @@
 var angularApp = angular.module('angularApp', []);
 
 // CONTROLLERS
-angularApp.controller('mainController', function ($scope,$log) {
-    $scope.name = 'James';
-    console.log('The scope is : ',$scope);
-    console.log($log);
-});
+angularApp.controller('mainController', ['$scope','$log', function (a,b) {
+    a.name = 'James';
+    console.log('The scope is : ',a);
+    console.log(b);
+}]);
