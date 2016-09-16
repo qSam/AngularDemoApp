@@ -15,4 +15,10 @@ angularApp.controller('mainController', ['$scope', '$timeout', '$filter', functi
     };
 
     $scope.characters = 5;
+
+    $scope.rules = [
+      {rulename: "Must be 5 characters"},
+      {rulename: "Must not be used elsewhere"},
+      {rulename: "Must be cool"}
+    ]
 }]);
