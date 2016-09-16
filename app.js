@@ -13,4 +13,6 @@ angularApp.controller('mainController', ['$scope', '$timeout', '$filter', functi
     $scope.lowercasehandle = function() {
       return $filter('lowercase')($scope.handle);
     };
+
+    $scope.characters = 5;
 }]);
