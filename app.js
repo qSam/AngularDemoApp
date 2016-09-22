@@ -6,7 +6,7 @@ angularApp.controller('mainController', ['$scope', '$timeout', '$filter', functi
     $scope.name = 'Qasim';
 
     $timeout(function(){
-      $scope.name = 'Wait, you are not Q'
+      $scope.name = 'Wait, you are not Q !'
     }, 3000);
 
     $scope.handle = '';
@@ -24,5 +24,8 @@ angularApp.controller('mainController', ['$scope', '$timeout', '$filter', functi
 
     $scope.alertClick = function() {
       alert('Clicked');
+
+    //Make API Call
+    // $http.get('/api')
     }
 }]);
