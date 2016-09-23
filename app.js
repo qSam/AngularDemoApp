@@ -29,3 +29,9 @@ angularApp.controller('mainController', ['$scope', '$timeout', '$filter', functi
     // $http.get('/api')
     }
 }]);
+
+//Second controller
+angularApp.controller('secondController', ['$scope',function ($scope){
+  $scope.secondName = 'Chewy';
+}
+]);
