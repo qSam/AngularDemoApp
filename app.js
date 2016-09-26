@@ -3,7 +3,7 @@ var angularApp = angular.module('angularApp', []);
 
 // CONTROLLERS
 angularApp.controller('mainController', ['$scope', '$timeout', '$filter', function ($scope, $timeout, $filter) {
-    $scope.name = 'Qasim';
+    $scope.name = 'Q, the Son of Asgard';
 
     $timeout(function(){
       $scope.name = 'Wait, you are not Q !'
