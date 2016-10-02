@@ -1,6 +1,20 @@
 // MODULE
 var angularApp = angular.module('angularApp', []);
 
+//Setup Angular Router
+angularApp.config(function($routeProvider){
+    $routeProvider
+      .when('/',{
+        templateURL: 'pages/main.html',
+        controller: 'mainController'
+      })
+
+      .when('/second',{
+        templateURL: 'pages/second.html',
+        controller: 'secondController'
+      })
+});
+
 // CONTROLLERS
 angularApp.controller('mainController', ['$scope', '$timeout', '$filter', function ($scope, $timeout, $filter) {
     $scope.name = 'Q, lets do this';
