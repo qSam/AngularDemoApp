@@ -33,7 +33,7 @@ angularApp.controller('mainController', ['$scope', '$timeout', '$filter', functi
     $scope.rules = [
       {rulename: "Must be 5 characters"},
       {rulename: "Must not be used elsewhere"},
-      {rulename: "Must be cool"}
+      {rulename: "Must be cool to use this"}
     ]
 
     $scope.alertClick = function() {
